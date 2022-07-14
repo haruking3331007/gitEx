@@ -3,6 +3,11 @@
 
 int main(){
   int h=0, t=0;
+  char str[8];
+
+  printf("Who are you?\n");
+  scanf("%s", str);
+  printf("Hello, %s!\n", str);
 
   printf("Tossing a coin...\n");
 
@@ -11,7 +16,6 @@ int main(){
 
     if(rand()%2==1){ printf("Heads\n"); h++;}
     else{ printf("Tails\n"); t++;}
-
   }
 
   printf("Heads: %d, Tails: %d\n", h, t);
